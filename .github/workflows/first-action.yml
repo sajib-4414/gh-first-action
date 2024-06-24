@@ -1,10 +1,12 @@
 name: First workflow
-on: workflow_dispatch
+#this trigger means means we can manually trigger this workflow
+on: workflow_dispatch 
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
+        # for each step we can define predefined Actions(maybe from marketplace) or use commands to run in shell
         run: echo "Hello world"
       - name: Print goodbye
         run: echo "Done -bye"
