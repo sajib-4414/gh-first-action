@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Print greeting
         # for each step we can define predefined Actions(maybe from marketplace) or use commands to run in shell
-        run: echo "Hello world"
+        run: |
+          echo "Hello world first line"
+          echo "Hello world second line"
       - name: Print goodbye
         run: echo "Done -bye"
